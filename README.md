@@ -23,5 +23,5 @@ Saga: Handles async calls to backend
 Reducer: Contains app's store
 Selector: Data is accessed via selectors
 
-![react-design]('./public/img/react-design.jpg')
+![react-design](./public/img/react-design.jpg)
 
