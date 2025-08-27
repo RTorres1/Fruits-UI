@@ -1,0 +1,41 @@
+
+.App-header {
+  min-height: 50px;
+}
+
+body {
+  background-image: url('../public/img/bg-blue.jpg') !important;
+  background-size: cover;
+}
+
+.Blue-border {
+  width: 40%;
+  border: solid 2px #183e62;
+  margin: 10px;
+  border-radius: 0.5rem;
+}
+
+.Blue-border > * {
+  padding: 10px;
+}
+
+.Fruit-container {
+  display: flex;
+  padding: 10px;
+}
+
+.Display-panel {
+  background-color: rgb(255, 255, 255);
+}
+
+.Center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.colored-square {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 5px;
+}
