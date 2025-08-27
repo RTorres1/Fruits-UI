@@ -14,11 +14,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Design
 App uses Container/Component design.
 
-Components:
+Components:<br>
 Container is used to manage and process data.
 Component contains only html (like) elements.
 
-Http:
+Http:<br>
 Saga: Handles async calls to backend
 Reducer: Contains app's store
 Selector: Data is accessed via selectors
