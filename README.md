@@ -12,16 +12,16 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Design
-App uses Container/Component design.
+App uses Container/Component design.<br>
 
 Components:<br>
-Container is used to manage and process data.
-Component contains only html (like) elements.
+Container is used to manage and process data.<br>
+Component contains only html (like) elements.<br>
 
 Http:<br>
-Saga: Handles async calls to backend
-Reducer: Contains app's store
-Selector: Data is accessed via selectors
+Saga: Handles async calls to backend<br>
+Reducer: Contains app's store<br>
+Selector: Data is accessed via selectors<br>
 
 ![react-design](./public/img/react-design.jpg)
 
