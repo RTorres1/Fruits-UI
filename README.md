@@ -1,5 +1,7 @@
 ## Description:
 React app to filter and display Fruit list. Fruit item contains name, colors, and in season fields.<br>
+<br>
+<br>
 ![fruits-dashboard](./public/img/fruits-dashboard.jpg)
 
 ## Available Scripts
