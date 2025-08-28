@@ -32,4 +32,5 @@ const FruitReadOnly = ({ name, colors, inSeason }: iFruit) => (
         <FormControlLabel style={{ padding: 10 }} control={<Checkbox checked={inSeason}/>} label="In Season" disabled/>
     </div>
 );
+
 export default FruitReadOnly;

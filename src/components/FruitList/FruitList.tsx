@@ -21,4 +21,5 @@ const FruitList = ({ fruits }: FruitListProps) => (
     </ul>
   </div>
 );
+
 export default FruitList;

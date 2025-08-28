@@ -1,21 +1,24 @@
-import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 import FruitList from './FruitList';
 import fruitsSelector from '../../store/fruits/fruitsSelector';
+import fruitAction from '../../store/fruits/fruitsActions';
 
 const FruitListContainer = () => {
+    const dispatch = useDispatch();
 
     const fetchedFruits = useSelector(fruitsSelector.fetchedFruits);
 
-    // use state when adding or removing fruits
-    // const [fruits, setFruits] = useState<iFruit[]>(fetchedFruits);
+    useEffect(() => {
+        dispatch(fruitAction.fetchAll());
+    }, [dispatch]);
 
-    // const addFruit(name: string, colors: string[], inSeason: boolean){}
-
-    // const deleteFruit(name: string){}
-
-
-    return <FruitList fruits={fetchedFruits}/>
+    return (
+        <FruitList
+            fruits={fetchedFruits}
+        />
+    );
 }
+
 export default FruitListContainer ;

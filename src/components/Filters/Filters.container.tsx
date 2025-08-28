@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, MouseEventHandler } from 'react';
+import { useState, useMemo } from 'react';
 import { useDispatch } from 'react-redux';
 
 import Filters from './Filters';
@@ -10,10 +10,6 @@ const FiltersContainer = () => {
   const [name, setName] = useState<string>('');
   const [color, setColor] = useState<string>('');
   const [inSeason, setInSeason] = useState<string>('');
-
-  useEffect(() => {
-    dispatch(fruitAction.fetchAll());
-  }, [dispatch]);
 
   const noFilters = useMemo(() => !name && !color && !inSeason, [name, color, inSeason]);
 
